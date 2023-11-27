@@ -48,6 +48,12 @@ public class AgendaServiceImpl implements AgendaService {
 
 	@Override
 	public List<Contacto> devolverContactos() {
+		try {
+			Thread.sleep(10000);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 		return agendaDao.devolverContactos();
 	}
 
